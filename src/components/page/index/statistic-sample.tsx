@@ -1,7 +1,7 @@
 import { IDashboardResponse } from "@/client/sample/dashboard";
 import { ArrowDown, ArrowUp } from "lucide-react";
 import React from "react";
-import CountUp from "react-countup";
+// import CountUp from "react-countup";
 
 interface IStatisticSampleProps {
   data: IDashboardResponse;
@@ -34,7 +34,7 @@ const StatisticSample = ({ data }: IStatisticSampleProps) => {
           <div className="mt-3">
             <div className="flex items-center mt-3">
               <div className="text-2xl font-semibold grow">
-                <CountUp end={data.visitor.value} separator="," />명
+                {/*<CountUp end={data.visitor.value} separator="," />명*/}
               </div>
               <div>{renderChangeRate(data.visitor.rate)}</div>
             </div>
@@ -44,7 +44,7 @@ const StatisticSample = ({ data }: IStatisticSampleProps) => {
           <div>주문</div>
           <div className="flex items-center mt-3">
             <div className="text-2xl font-semibold grow">
-              <CountUp end={data.order.value} separator="," />건
+              {/*<CountUp end={data.order.value} separator="," />건*/}
             </div>
             <div>{renderChangeRate(data.order.rate)}</div>
           </div>
@@ -53,7 +53,7 @@ const StatisticSample = ({ data }: IStatisticSampleProps) => {
           <div>매출</div>
           <div className="flex items-center mt-3">
             <div className="text-2xl font-semibold grow">
-              <CountUp end={data.income.value} separator="," />원
+              {/*<CountUp end={data.income.value} separator="," />원*/}
             </div>
             <div>{renderChangeRate(data.income.rate)}</div>
           </div>
